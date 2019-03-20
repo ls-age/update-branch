@@ -2,15 +2,25 @@
   "name": "@ls-age/update-branch",
   "version": "0.0.0",
   "description": "Tired of running 'git merge origin/master' all the time?",
-  "main": "out/index.js",
-  "types": "out/types",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ls-age/update-branch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ls-age/update-branch/issues"
+  },
+  "homepage": "https://github.com/ls-age/update-branch#readme",
+  "author": "Lukas Hechenberger <npm@ls-age.com>",
   "bin": {
     "update-branch": "out/cli.js"
   },
+  "main": "out/index.js",
+  "types": "out/types/index.d.ts",
   "scripts": {
-    "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "rollup -c",
     "build": "run-p build:*",
+    "build:js": "rollup -c",
+    "build:types": "tsc --emitDeclarationOnly",
     "clean": "rm -rf out",
     "docs": "typedoc src/index.ts",
     "lint": "tslint -c tslint.json src/**/* rollup.config.js",
@@ -24,8 +34,10 @@
     "ci",
     "cd"
   ],
-  "author": "Lukas Hechenberger <npm@ls-age.com>",
-  "license": "MIT",
+  "dependencies": {
+    "@microsoft/ts-command-line": "^4.2.3",
+    "execa": "^1.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.1",
@@ -39,9 +51,5 @@
     "rollup-plugin-node-resolve": "^4.0.1",
     "tslint": "^5.14.0",
     "typescript": "^3.3.4000"
-  },
-  "dependencies": {
-    "@microsoft/ts-command-line": "^4.2.3",
-    "execa": "^1.0.0"
   }
 }
