@@ -2,7 +2,7 @@
 
 > Tired of running `git merge origin/master` all the time?
 
-[![CircleCI](https://circleci.com/gh/ls-age/update-branch.svg?style=svg)](https://circleci.com/gh/ls-age/update-branch)
+[![CircleCI](https://circleci.com/gh/ls-age/update-branch.svg?style=svg)](https://circleci.com/gh/ls-age/update-branch) [![Greenkeeper badge](https://badges.greenkeeper.io/ls-age/update-branch.svg)](https://greenkeeper.io/)
 
 ## Motivation
 
