@@ -139,7 +139,6 @@ workflows:
           requires:
             - lint-source
             - type-check
-            - test
           filters:
             branches:
               only: /greenkeeper\/.*/
