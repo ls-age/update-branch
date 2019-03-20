@@ -2,6 +2,8 @@
 
 > Tired of running `git merge origin/master` all the time?
 
+[![CircleCI](https://circleci.com/gh/ls-age/update-branch.svg?style=svg)](https://circleci.com/gh/ls-age/update-branch)
+
 ## Motivation
 
 Updating feature branches or branches created by tools like greenkeeper from master can be a real pain when maintaining a large number of repos. The *update-branch* tool does just this: Update a branch from another.
