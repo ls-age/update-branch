@@ -32,7 +32,7 @@ Use the 'branch' and 'from' options to change them.`);
 
   if (fetch) {
     logger.info('Fetching remote changes...');
-    await git('fetch');
+    await git('fetch', '--all');
   }
 
   logger.info('Applying changes...');
