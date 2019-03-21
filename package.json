@@ -23,7 +23,7 @@
     "build:types": "tsc --emitDeclarationOnly",
     "clean": "rm -rf out",
     "docs": "typedoc src/index.ts",
-    "lint": "tslint -c tslint.json src/**/* rollup.config.js",
+    "lint": "tslint -c tslint.json \"src/**/*\" rollup.config.js",
     "test": "ava",
     "type-check": "tsc --noEmit"
   },
